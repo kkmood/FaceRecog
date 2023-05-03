@@ -23,6 +23,7 @@ Projeto feito em python usando a bilioteca [face_regognition](https://github.com
 * Confusão ao tentar entender os códigos.
 * Falta de funcionalidades.
 * Desing precário
+* Erros
 
 ## Biliotecas necessárias
 
