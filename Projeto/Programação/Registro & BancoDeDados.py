@@ -7,13 +7,13 @@ from firebase_admin import credentials
 from firebase_admin import db
 from firebase_admin import storage
 
-cred = credentials.Certificate('')
+cred = credentials.Certificate('') #Onde se localiza o DATABASE, EX: C:/Users/BOB/Desktop/facerecog/Database.json
 firebase_admin.initialize_app(cred, {
     'databaseURL': "https://reconhecimentofacial-a9de4-default-rtdb.firebaseio.com/",
     'storageBucket': "reconhecimentofacial-a9de4.appspot.com"
 })
 
-pasta = ''
+pasta = '' #Onde os rostos se localizam, EX: C:/Users/BOB/Desktop/facerecog/Projeto/Rostos
 inf_rosto = os.listdir(pasta)
 print(inf_rosto)
 imgROSTO = []
