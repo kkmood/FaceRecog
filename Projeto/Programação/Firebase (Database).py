@@ -3,7 +3,7 @@ from firebase_admin import credentials
 from firebase_admin import db
 
 
-cred = credentials.Certificate("C:/Users/Gabriel Castro/Desktop/facerecog/Database.json")
+cred = credentials.Certificate("") #Onde o DATABASE se localiza, EX: C:/Users/BOB/Desktop/facerecog/Database.json
 firebase_admin.initialize_app(cred, {
     'databaseURL':"https://reconhecimentofacial-a9de4-default-rtdb.firebaseio.com/"
 })
