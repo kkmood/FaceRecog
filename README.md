@@ -45,7 +45,7 @@ Banco de dados feito usando [firebase](https://firebase.google.com/?hl=pt)
 
 ## Rodando
 
-Para rodar o código basta inicializar o "main.py"
+Para rodar o código basta inicializar o "main.py", localizado em /Projeto/Programação
 
 Certifique-se de colocar os diretórios corretos onde é necessário.
 
