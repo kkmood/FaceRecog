@@ -10,7 +10,7 @@ from firebase_admin import storage
 import numpy as np
 import numpy
 
-cred = credentials.Certificate("C:/Users/Gabriel Castro/Desktop/facerecog/Database.json")
+cred = credentials.Certificate("") #Onde o DATABASE SE LOCALIZA, EX: C:/Users/BOB/Desktop/facerecog/Database.json
 firebase_admin.initialize_app(cred, {
     'databaseURL': "https://reconhecimentofacial-a9de4-default-rtdb.firebaseio.com/",
     'storageBucket': "reconhecimentofacial-a9de4.appspot.com"
@@ -22,9 +22,9 @@ cap = cv2.VideoCapture(1)
 cap.set(3, 640)
 cap.set(4, 480)
 
-imgFundo = cv2.imread('C:/Users/Gabriel Castro/Desktop/facerecog/Projeto/HUD/Fundo/background.png')
+imgFundo = cv2.imread('') # EX: C:/Users/BOB/Desktop/facerecog/Projeto/HUD/Fundo/background.png
 
-pasta = 'C:/Users/Gabriel Castro/Desktop/facerecog/Projeto/HUD'
+pasta = '' #Pasta HUD, EX: C:/Users/BOB/Desktop/facerecog/Projeto/HUD
 inf_pasta = os.listdir(pasta)
 imgHUD = []
 for path in inf_pasta:
